@@ -1,10 +1,10 @@
 from django.shortcuts import render
 
-from mainapp.models import OurEvent
+from oureventapp.models import OurEvent
 
 
 def events(request):
-    events = CategorySight.objects.all()
+    events = OurEvent.objects.all()
     context = {
         'events': events,
         'page_title': 'мероприятия'
